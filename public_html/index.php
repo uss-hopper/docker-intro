@@ -32,6 +32,8 @@
 
 		<!-- form validate js -->
 
+		<script src="js/jquery-validate.js"></script>
+
 
 		<title>PWP Form Demo</title>
 	</head>
@@ -49,7 +51,7 @@
 					<div class="col-md-6">
 
 						<!-- BEGIN CONTACT FORM -->
-						<form id="demo-form" method="post" action="php/mailer.php">
+						<form id="contact-form" method="post" action="php/mailer.php">
 							<div class="form-group">
 								<label for="demoName">Name</label>
 								<div class="input-group">
