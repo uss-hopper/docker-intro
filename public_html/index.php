@@ -19,9 +19,15 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 		<!-- jQuery Form, Additional Methods, Validate -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js" integrity="sha256-0Yg/eibVdKyxkuVo1Qwh0DspoUCHvSbm/oOoYVz32BQ=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js" integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A=" crossorigin="anonymous"></script>
+
 
 
 		<!-- Google reCAPTCHA -->
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+
 
 
 		<!-- form validate js -->
@@ -81,7 +87,8 @@
 								</div>
 							</div>
 
-							<div class="g-recaptcha" data-sitekey="6Lf_ZVwUAAAAABkUXBI61Cs7Lxv2FviDufAeIHnE"></div>
+							<div class="g-recaptcha" data-sitekey="6LcHZG0UAAAAAHCSdqZNJATJ1VNMjUxf4sm4jOlM"></div>
+
 
 							<button class="btn btn-info" type="submit">Submit</button>
 							<button class="btn btn-default" type="reset">Reset</button>
