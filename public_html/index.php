@@ -90,7 +90,7 @@
 								</div>
 							</div>
 
-							<div class="g-recaptcha" data-sitekey="6LcHZG0UAAAAAHCSdqZNJATJ1VNMjUxf4sm4jOlM"></div>
+							<div class="g-recaptcha" data-sitekey="6LdKYm4UAAAAAF7PfAsN_5Kl74aJ4kLi1lZSpT8B"></div>
 
 
 							<button class="btn btn-info" type="submit">Submit</button>

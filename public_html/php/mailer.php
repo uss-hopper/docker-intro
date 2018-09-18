@@ -7,9 +7,9 @@
  *
  * @author Rochelle Lewis <rlewis37@cnm.edu>
  **/
-
+ini_set('display_errors', 1);
 // require all composer dependencies
-require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
+require_once(dirname(__DIR__, 1) . "/vendor/autoload.php");
 
 // require mail-config.php
 require_once("mail-config.php");
@@ -82,7 +82,7 @@ try {
 	 *
 	 * @see http://swiftmailer.org/docs/sending.html Sending Messages - Documentation - SwitftMailer
 	 **/
-	$smtp = new Swift_SmtpTransport("localhost", 25);
+	$smtp = new Swift_SmtpTransport("192.168.99.100", 25, "tls");
 	$mailer = new Swift_Mailer($smtp);
 	$numSent = $mailer->send($swiftMessage, $failedRecipients);
 
