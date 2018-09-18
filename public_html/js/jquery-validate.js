@@ -55,7 +55,6 @@ $(document).ready(function(){
 
 		// AJAX submit the form data to back end if rules pass
 		submitHandler: function(form) {
-			console.log("about to submit");
 			$("#contact-form").ajaxSubmit({
 				type: "POST",
 				url: $("#contact-form").attr("action"),
