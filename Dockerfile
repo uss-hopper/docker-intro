@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 MAINTAINER webmaster@localhost
-ENV APACHE_DOCUMENT_ROOT=/var/www/html/public_html
+ENV APACHE_DOCUMENT_ROOT=/var/www/html
 
 RUN apt-get update && apt-get install -y tzdata
 
@@ -22,13 +22,19 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
 RUN cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 
-COPY . var/www/html/
+RUN rm /var/www/html/index.html
+
+COPY public_html var/www/html
+
+COPY php/mailer.php /var/www/php
+
+COPY php/composer.json /var/www
 
 CMD /usr/sbin/apache2ctl -D FOREGROUND
 
-WORKDIR /var/www/html
+WORKDIR /var/www
 
-RUN rm /var/www/html/index.html
+
 
 RUN composer install
 

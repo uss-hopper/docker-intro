@@ -52,7 +52,7 @@
 					<div class="col-md-6">
 
 						<!-- BEGIN CONTACT FORM -->
-						<form id="contact-form"  method="post" action="php/mailer.php">
+						<form id="contact-form"  method="post" action="../php/mailer.php">
 							<div class="form-group">
 								<label for="name">Name</label>
 								<div class="input-group">

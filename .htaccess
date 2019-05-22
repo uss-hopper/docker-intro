@@ -1,5 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^localhost$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^localhost$
-RewriteCond %{REQUEST_URI} !public_html/
-RewriteRule (.*) /folder/$1 [L]
