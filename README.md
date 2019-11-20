@@ -24,6 +24,6 @@ Build the image with your DockerHub username:
 * `pwp` is the name of the container you want to run a command on
 * `/bin/bash` is the command on the container you want to run. In this case the command starts a bash session
 #### Stop the running container
-`docker conntainer stop pwp`
+`docker container stop pwp`
 * `stop` is a docker command that stops a running container
 
