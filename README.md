@@ -3,6 +3,7 @@
 ### How to create an Image
 Build the image with your DockerHub username:
 `docker image build -t <YOUR_USERNAME>/pwp .`
+  * `build` a docker command that builds a docker image based on a dockerfile
   * `-t` allows us to give the image our own name
   * `.` refers to where you want to create the image from
 #### Check for the image:
@@ -16,3 +17,13 @@ Build the image with your DockerHub username:
 #### Check for the running container
 `docker container ls` vs `docker ps`
     * I prefer `docker container ls` 
+#### Gain shell access to the container
+`docker container exec -it pwp /bin/bash`
+* `exec` executes a shell command on the droplet
+* `-it` flags stand for interactive tty whichs allows for the container to take over the terminal
+* `pwp` is the name of the container you want to run a command on
+* `/bin/bash` is the command on the container you want to run. In this case the command starts a bash session
+#### Stop the running container
+`docker conntainer stop pwp`
+* `stop` is a docker command that stops a running container
+
